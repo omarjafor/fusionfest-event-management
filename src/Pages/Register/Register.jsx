@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import useHook from "../../Hooks/useHook";
 import toast from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
     const [registError, setRegistError] = useState('');
@@ -62,6 +63,9 @@ const Register = () => {
 
     return (
         <div className="flex justify-center border-red border border-solid h-[90vh] items-center">
+            <Helmet>
+                <title>Event | Register</title>
+            </Helmet>
             <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                 <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                     Sign Up

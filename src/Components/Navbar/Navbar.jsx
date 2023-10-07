@@ -1,21 +1,41 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useHook from "../../Hooks/useHook";
 
 
 const Navbar = () => {
     const { user, logOut } = useHook();
 
-    const navLink = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/services'>Services</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
-        <li><Link to='/profile'>Profile</Link></li>
+    const navLink = 
+    <>
+        <li><NavLink to='/'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+        >Home</NavLink></li>
+        <li><NavLink to='/services'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+        >Services</NavLink></li>
+        <li><NavLink to='/about'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+        >About</NavLink></li>
+        {
+            user && <>
+                <li><NavLink to='/contact'
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+                >Contact</NavLink></li>
+                <li><NavLink to='/profile'
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+                >Profile</NavLink></li>
+            </>
+        }
     </>
 
     return (
         <>
-            <div className="navbar sticky bg-lime-200">
+            <div className="navbar sticky">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -40,8 +60,8 @@ const Navbar = () => {
                     {
                         user?.email ?
                             <div className="dropdown dropdown-end">
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                    <div className="w-10 rounded-full">
+                                <label tabIndex={0} className="btn btn-ghost btn-square avatar">
+                                    <div className="w-10 rounded-lg">
                                         <img src={user.photoURL} alt={user.displayName} />
                                     </div>
                                 </label>

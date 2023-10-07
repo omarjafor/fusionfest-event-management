@@ -1,6 +1,6 @@
+import { Helmet } from "react-helmet-async";
 import useHook from "../../Hooks/useHook";
-import { FaFacebook, FaTwitter} from "react-icons/fa";
-
+import { AiFillFacebook, AiFillTwitterSquare, AiOutlineInstagram } from 'react-icons/ai';
 
 const Profile = () => {
 
@@ -8,6 +8,9 @@ const Profile = () => {
 
     return (
         <div className="flex justify-center items-center h-[80vh]">
+            <Helmet>
+                <title>Event | Profile</title>
+            </Helmet>
             <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
                     <img src={user?.photoURL} alt="profile-picture" />
@@ -20,25 +23,34 @@ const Profile = () => {
                         {user?.email}
                     </p>
                 </div>
-                <div className="flex justify-center gap-7 p-6 pt-2">
-                    <a
-                        href="#facebook"
-                        className="block bg-gradient-to-tr from-blue-600 to-blue-400 bg-clip-text font-sans text-xl font-normal leading-relaxed text-transparent antialiased"
+                <div className="flex justify-center pb-4 gap-4">
+                    <button
+                        className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
                     >
-                        <FaFacebook></FaFacebook>
-                    </a>
-                    <a
-                        href="#twitter"
-                        className="block bg-gradient-to-tr from-light-blue-600 to-light-blue-400 bg-clip-text font-sans text-xl font-normal leading-relaxed text-transparent antialiased"
+                        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
+                            <AiFillFacebook size={30}></AiFillFacebook>
+                        </span>
+                    </button>
+                    <button
+                        className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
                     >
-                        <FaTwitter></FaTwitter>
-                    </a>
-                    <a
-                        href="#instagram"
-                        className="block bg-gradient-to-tr from-purple-600 to-purple-400 bg-clip-text font-sans text-xl font-normal leading-relaxed text-transparent antialiased"
+                        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
+                            <AiFillTwitterSquare size={30}></AiFillTwitterSquare>
+                        </span>
+                    </button>
+                    <button
+                        className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-light="true"
                     >
-                        
-                    </a>
+                        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
+                            <AiOutlineInstagram size={30}></AiOutlineInstagram>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
