@@ -9,25 +9,25 @@ const Navbar = () => {
     <>
         <li><NavLink to='/'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+                isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
         >Home</NavLink></li>
         <li><NavLink to='/services'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+                isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
         >Services</NavLink></li>
         <li><NavLink to='/about'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+                isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
         >About</NavLink></li>
         {
             user && <>
                 <li><NavLink to='/contact'
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+                        isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
                 >Contact</NavLink></li>
                 <li><NavLink to='/profile'
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "bg-green-500 text-lg font-medium" : ""}
+                        isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
                 >Profile</NavLink></li>
             </>
         }
@@ -67,10 +67,10 @@ const Navbar = () => {
                                 </label>
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                     <li>
-                                        <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
+                                        <button className="">{user.displayName}</button>
                                     </li>
                                     <li>
-                                        <button className="btn btn-sm  btn-ghost">{user.email}</button>
+                                        <button className="">{user.email}</button>
                                     </li>
                                     <li>
                                         <button className="btn btn-sm  btn-ghost"

@@ -6,10 +6,16 @@ import { Toaster } from "react-hot-toast";
 
 const Root = () => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
+        <div className="relative">
+            <div className="relative z-10">
+                <Navbar></Navbar>
+            </div>
+            <div className="relative z-0">
+                <Outlet></Outlet>
+            </div>
+            <div>
+                <Footer></Footer>
+            </div>
             <Toaster></Toaster>
         </div>
     );
