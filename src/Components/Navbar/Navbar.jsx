@@ -10,7 +10,7 @@ const Navbar = () => {
         <li><Link to='/services'>Services</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
+        <li><Link to='/profile'>Profile</Link></li>
     </>
 
     return (
@@ -48,7 +48,9 @@ const Navbar = () => {
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                     <li>
                                         <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
-
+                                    </li>
+                                    <li>
+                                        <button className="btn btn-sm  btn-ghost">{user.email}</button>
                                     </li>
                                     <li>
                                         <button className="btn btn-sm  btn-ghost"
