@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <>
-            <footer className="footer footer-center p-10 bg-lime-200 text-base-content rounded">
+            <footer className="footer footer-center p-10 bg-gradient-to-br from-[#00b09b] to-[#96c93d] text-base-content rounded-lg">
                 <nav className="grid grid-flow-col gap-4">
                     <a className="link link-hover">About US</a>
                     <a className="link link-hover">Contact</a>

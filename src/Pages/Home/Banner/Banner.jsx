@@ -17,10 +17,11 @@ export default function Banner() {
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
+                initialSlide={4}
                 centeredSlides={true}
                 slidesPerView={'auto'}
                 coverflowEffect={{
-                    rotate: 0,
+                    rotate: 15,
                     stretch: 0,
                     depth: 300,
                     modifier: 1,
@@ -31,7 +32,7 @@ export default function Banner() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/sb3LMmw/resizer-6.jpg" />
+                    <img src="https://i.ibb.co/dL3MFZ1/resizer-9.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="https://i.ibb.co/SPLqW8f/resizer-8.jpg" />
@@ -49,7 +50,7 @@ export default function Banner() {
                     <img src="https://i.ibb.co/djwW14H/resizer-3.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/dL3MFZ1/resizer-9.jpg" />
+                    <img src="https://i.ibb.co/sb3LMmw/resizer-6.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="https://i.ibb.co/vVhBmGm/resizer-4.jpg" />

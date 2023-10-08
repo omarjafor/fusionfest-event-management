@@ -12,7 +12,7 @@ const Register = () => {
 
     const navigate = useNavigate();
 
-    const { createUser } = useHook();
+    const { createUser, logOut } = useHook();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -42,7 +42,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
-                toast('User Registration Successful')
+                toast.success('User Registration Successful')
                 e.target.reset();
                 navigate('/login');
 
@@ -54,6 +54,10 @@ const Register = () => {
                 }).catch((err) => {
                     console.error(err.message);
                 });
+
+                logOut()
+                    .then()
+                    .catch()
             })
             .catch(error => {
                 console.error(error);

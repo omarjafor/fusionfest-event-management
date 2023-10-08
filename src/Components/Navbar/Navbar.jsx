@@ -5,37 +5,34 @@ import useHook from "../../Hooks/useHook";
 const Navbar = () => {
     const { user, logOut } = useHook();
 
-    const navLink = 
-    <>
-        <li><NavLink to='/'
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
-        >Home</NavLink></li>
-        <li><NavLink to='/services'
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
-        >Services</NavLink></li>
-        <li><NavLink to='/about'
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
-        >About</NavLink></li>
-        {
-            user && <>
-                <li><NavLink to='/contact'
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
-                >Contact</NavLink></li>
-                <li><NavLink to='/profile'
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "text-lg font-medium" : ""}
-                >Profile</NavLink></li>
-            </>
-        }
-    </>
+    const navLink =
+        <>
+            <li><NavLink to='/'
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
+            >Home</NavLink></li>
+            <li><NavLink to='/services'
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
+            >Services</NavLink></li>
+            <li><NavLink to='/about'
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
+            >About</NavLink></li>
+            <li><NavLink to='/contact'
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
+            >Contact</NavLink></li>
+            <li><NavLink to='/profile'
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
+            >Profile</NavLink></li>
+
+        </>
 
     return (
         <>
-            <div className="navbar sticky">
+            <nav className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,9 +42,9 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <Link to='/' className="btn btn-ghost font-bold normal-case text-3xl">CulturalFiest</Link>
+                    <Link to='/' className="btn btn-ghost font-bold normal-case text-3xl bg-gradient-to-br from-[#00b09bb9] to-[#96c93d] bg-clip-text text-transparent">FusionFest</Link>
                 </div>
-                
+
 
 
                 {/* avatar part  */}
@@ -86,7 +83,7 @@ const Navbar = () => {
                             </Link>
                     }
                 </div>
-            </div>
+            </nav>
         </>
     );
 };

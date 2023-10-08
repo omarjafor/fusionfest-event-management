@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 const Root = () => {
     return (
         <div className="relative">
-            <div className="relative z-10">
+            <div className="sticky inset-0 z-10 bg-white bg-opacity-70">
                 <Navbar></Navbar>
             </div>
             <div className="relative z-0">
