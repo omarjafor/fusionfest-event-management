@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "date": "2023-10-15",
+        "price": 25.99,
+        "title": "Cultural Festival",
+        "short_details": "Festivals are the heartbeats of culture. Join us in celebrating life with vibrant colors, music, dance, and a melting pot of flavors from around the world.",
+        "image": "https://i.ibb.co/Q6KYP8k/Culturalfestival.jpg",
+        "time": "3:00 PM - 10:00 PM",
+        "location": "City Park"
+    },
+    {
+        "id": 2,
+        "date": "2023-11-05",
+        "price": 10.00,
+        "title": "Cultural Celebrations",
+        "short_details": "Cultural celebrations are a traditions and values. Immerse yourself in the rich tapestry of heritage through music, dance, rituals, and cuisine.",
+        "image": "https://i.ibb.co/MgR0Kc1/Cultural-Celebration.jpg",
+        "time": "8:00 AM - 11:00 AM",
+        "location": "Downtown"
+    },
+    {
+        "id": 3,
+        "date": "2023-11-18",
+        "price": 15.99,
+        "title": "Diwali Celebration",
+        "short_details": "Light up your life! Our Diwali Celebration is a joyous festival of lights, symbolizing the triumph of good over evil. Join us for dazzling displays, traditional.",
+        "image": "https://i.ibb.co/9YHd4xW/diwali.jpg",
+        "time": "10:00 AM - 4:00 PM",
+        "location": "Community Center"
+    },
+    {
+        "id": 4,
+        "date": "2023-12-02",
+        "price": 30.00,
+        "title": "Winter Wonderland Parades",
+        "short_details": "Parades are a spectacle of joy and unity. Witness the magic of processions with dazzling floats, costumes, and the infectious energy of community spirit.",
+        "image": "https://i.ibb.co/h8DtDgY/winterwonder.jpg",
+        "time": "5:30 PM - 8:00 PM",
+        "location": "Main Street"
+    },
+    {
+        "id": 5,
+        "date": "2024-01-15",
+        "price": 12.50,
+        "title": "International Food Fair",
+        "short_details": "Savor flavors from around the world in one place. Embark on a culinary journey! Savor the flavors of the globe with an array of international dishes at our food festival.",
+        "image": "https://i.ibb.co/3YF99LJ/foodfair.jpg",
+        "time": "12:00 PM - 7:00 PM",
+        "location": "Fairgrounds"
+    },
+    {
+        "id": 6,
+        "date": "2024-02-10",
+        "price": 20.00,
+        "title": "Carnivals and Fairs",
+        "short_details": "Step into a world of fun and wonder at carnivals and fairs. From thrilling rides to mouthwatering treats and games, there's something for everyone to enjoy.",
+        "image": "https://i.ibb.co/Z89n9VM/carnivalsfair.jpg",
+        "time": "7:00 PM - 12:00 AM",
+        "location": "Grand Ballroom"
+    },
+    {
+        "id": 7,
+        "date": "2024-03-25",
+        "price": 18.99,
+        "title": "Fundraisers and Charity Galas",
+        "short_details": "Make an impact with style and generosity. Fundraisers and charity galas are elegant gatherings with a noble change lives and communities.",
+        "image": "https://i.ibb.co/BnSj89M/fundrisercharity.jpg",
+        "time": "9:30 AM - 4:30 PM",
+        "location": "Community Center"
+    },
+    {
+        "id": 8,
+        "date": "2024-04-12",
+        "price": 18.00,
+        "title": "Community Theater Festival",
+        "short_details": "Celebrating the performing arts! Enjoy a showcase of local talent through captivating plays, musicals, and theatrical performances. Join us for a weekend.",
+        "image": "https://i.ibb.co/j4YPH7W/comntytheater.jpg",
+        "time": "10:00 AM - 2:00 PM",
+        "location": "Various Locations"
+    },
+    {
+        "id": 9,
+        "date": "2024-05-20",
+        "price": 14.99,
+        "title": "Heritage Festival",
+        "short_details": "Immerse yourself in a cultural journey! Our Heritage Festival is a vibrant celebration of traditions, art, and cuisine from around the world. Experience the rich.",
+        "image": "https://i.ibb.co/BcvDzDb/heritagefestival.jpg",
+        "time": "6:00 PM - 9:00 PM",
+        "location": "Community Theater"
+    }
+]

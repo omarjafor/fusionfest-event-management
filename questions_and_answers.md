@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
+#### Answer: A: `{}`
 
-<i>Explanation:</i>
+<i>Explanation: The answer is {} because the code assigns an empty object {} to the variable greetign, and when you log greetign, it displays the empty object. However, there is a typo in the code as the variable should be greeting, not greetign.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
+#### Answer: C: `"12"`
 
-<i>Explanation:</i>
+<i>Explanation: The answer is "12" because 1 is number and 2 is string so this two number cannot be perform addition, so resulting in a concatenated string "12".</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Explanation:</i>
+<i>Explanation: The food array is not modified, so it still contains ["🍕", "🍫", "🥑", "🍔"]. Changing info.favoriteFood to "🍝" doesn't alter the food array, as it operates on a separate property within the info object. </i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
+#### Answer: B: `Hi there, undefined`
 
-<i>Explanation:</i>
+<i>Explanation: The sayHi function expects an argument name, but it's called without one. This will result without it, such as "undefined" as there's no default value specified.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 
+#### Answer: C: 3
 
-<i>Explanation:</i>
+<i>Explanation: The code counts the number of truthy values in the nums array using the forEach loop. In this case, it increments count for all truthy values. So there are truthy value only 1,2,3 that means count will increase three times only.</i>
 
 </p>
 </details>

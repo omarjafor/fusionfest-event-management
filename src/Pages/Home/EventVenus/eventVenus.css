@@ -61,7 +61,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: #fff;
-    background: rgb(236, 68, 90);
+    background: linear-gradient(to bottom right, #00b09b, #96c93d) !important;
     border: none;
     border-radius: .5rem;
 }

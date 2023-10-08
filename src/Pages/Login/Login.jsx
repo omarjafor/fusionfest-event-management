@@ -1,12 +1,15 @@
 import { sendPasswordResetEmail } from "firebase/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 import auth from "../../Firebase/firebase.config";
 import useHook from "../../Hooks/useHook";
 import toast from 'react-hot-toast';
 import { Helmet } from "react-helmet-async";
+import LoginLogo from "./LoginLogo";
 
 const Login = () => {
+    const location = useLocation();
+
     const { signIn, googleLogin } = useHook();
     const emailRef = useRef(null);
 
@@ -26,7 +29,7 @@ const Login = () => {
                 console.log(result.user);
                 e.target.reset();
                 toast.success('User logged in successfull');
-                navigate('/');
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 console.log(error.message);
@@ -38,7 +41,7 @@ const Login = () => {
         googleLogin()
             .then(result => {
                 console.log(result.user);
-                navigate('/');
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 console.log(error.message);
@@ -67,12 +70,13 @@ const Login = () => {
     }
 
     return (
-        <div className="flex justify-center border-red border border-solid h-[90vh] items-center">
+        <div className="flex flex-col-reverse lg:flex-row justify-center gap-10 my-10 items-center">
             <Helmet>
                 <title>Event | Login</title>
             </Helmet>
+            <LoginLogo></LoginLogo>
             <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-blue-600 to-teal-400 bg-clip-border text-white shadow-lg shadow-pink-500/40">
+                <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-[#00b09b] to-[#96c93d] hover:bg-gradient-to-tl bg-clip-border text-white shadow-lg shadow-pink-500/40">
                     <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
                         Sign In
                     </h3>
@@ -121,7 +125,7 @@ const Login = () => {
                             Don&apos;t have an account?
                             <Link to='/register'
                                 href="#signup"
-                                className="ml-1 block font-sans text-sm font-bold leading-normal text-pink-500 antialiased"
+                                className="ml-1 block font-sans text-sm font-bold leading-normal text-pink-500 hover:text-blue-700 antialiased"
                             >
                                 Sign up
                             </Link> <span> &nbsp; OR </span>

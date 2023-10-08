@@ -5,6 +5,7 @@ import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import useHook from "../../Hooks/useHook";
 import toast from 'react-hot-toast';
 import { Helmet } from "react-helmet-async";
+import RegLogo from "./RegLogo";
 
 const Register = () => {
     const [registError, setRegistError] = useState('');
@@ -66,10 +67,11 @@ const Register = () => {
     }
 
     return (
-        <div className="flex justify-center border-red border border-solid h-[90vh] items-center">
+        <div className="flex flex-col-reverse lg:flex-row justify-center gap-10 my-14 items-center">
             <Helmet>
                 <title>Event | Register</title>
             </Helmet>
+            <RegLogo></RegLogo>
             <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                 <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                     Sign Up
@@ -167,7 +169,7 @@ const Register = () => {
                         </label>
                     </div>
                     <button
-                        className="mt-6 block w-full select-none rounded-lg bg-teal-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        className="mt-6 block w-full select-none rounded-lg bg-gradient-to-br from-[#00b09b] to-[#96c93d] hover:bg-gradient-to-tl py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                         type="submit"
                         data-ripple-light="true"
                     >

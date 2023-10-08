@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "date": "2024-10-08",
+        "price": 49.99,
+        "title": "Cultural Fest 2023",
+        "short_details": "Get ready for a vibrant celebration of art, music, and heritage! Join us for a memorable weekend filled with live performances, workshops, and mouthwatering cuisines from around the world.",
+        "image_link": "https://i.ibb.co/LPm8pzm/event-1.jpg"
+    },
+    {
+        "id": 2,
+        "date": "2023-12-18",
+        "price": 29.99,
+        "title": "Community Charity Run",
+        "short_details": "Run for a cause! Lace up your sneakers and join us in making a difference. Our charity run brings together neighbors, friends, and families to raise funds for local charities.",
+        "image_link": "https://i.ibb.co/ZmgFbV9/event-grid-2.jpg"
+    },
+    {
+        "id": 3,
+        "date": "2024-06-12",
+        "price": 79.99,
+        "title": "Cultural Diversity Workshop",
+        "short_details": "Celebrate the richness of our diverse community! Join our workshop series to explore different cultures, traditions, and cuisines. A chance to learn, share, and connect.",
+        "image_link": "https://i.ibb.co/8zn82Rk/event-grid.jpg"
+    },
+    {
+        "id": 4,
+        "date": "2024-10-15",
+        "price": 49.99,
+        "title": "Family Movie Night Under the Stars",
+        "short_details": "Gather the family, bring your blankets and snacks, and enjoy a magical night of outdoor cinema. Join us for a heartwarming movie experience beneath the starry sky.",
+        "image_link": "https://i.ibb.co/vVhBmGm/resizer-4.jpg"
+    },
+    {
+        "id": 5,
+        "date": "2023-12-20",
+        "price": 29.99,
+        "title": "Community Art Exhibition",
+        "short_details": "Witness the creativity of our local artists at our community art exhibition. Marvel at stunning paintings, sculptures, and multimedia works that reflect our community's spirit.",
+        "image_link": "https://i.ibb.co/swTRLH0/resizer-7.jpg"
+    },
+    {
+        "id": 6,
+        "date": "2024-08-02",
+        "price": 79.99,
+        "title": "Artisan Craft Fair",
+        "short_details": "Discover unique treasures crafted by local artisans. Our craft fair is a haven for handmade jewelry, pottery, textiles, and more. Support local talent and find one-of-a-kind gifts.",
+        "image_link": "https://i.ibb.co/SPLqW8f/resizer-8.jpg"
+    }
+]

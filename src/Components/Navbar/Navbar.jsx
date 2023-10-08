@@ -11,18 +11,10 @@ const Navbar = () => {
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
             >Home</NavLink></li>
-            <li><NavLink to='/services'
+            <li><NavLink to='/upcomingevents'
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
-            >Services</NavLink></li>
-            <li><NavLink to='/about'
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
-            >About</NavLink></li>
-            <li><NavLink to='/contact'
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}
-            >Contact</NavLink></li>
+            >Upcoming Events</NavLink></li>
             <li><NavLink to='/profile'
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-green-600 text-lg font-bold underline outline-offset-8" : ""}

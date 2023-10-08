@@ -5,7 +5,7 @@ const WhyUs = () => {
         <section className="bg-[#f7f7f7]">
             <div className='mt-10 py-10'>
                 <h1 className='text-4xl font-bold'>Why US!</h1>
-                <p className='max-w-3xl mx-auto my-4 text-base text-gray-500'>FusionFiest, Where Your Vision Meets Perfection. We specialize in seamlessly blending diverse cultures, creating events that celebrate inclusivity and diversity. Our team of visionaries and creatives turn ideas into extraordinary realities, crafting events that leave a lasting impression.</p>
+                <p className='max-w-3xl mx-auto px-5 my-4 text-base text-gray-500'>FusionFiest, Where Your Vision Meets Perfection. We specialize in seamlessly blending diverse cultures, creating events that celebrate inclusivity and diversity. Our team of visionaries and creatives turn ideas into extraordinary realities, crafting events that leave a lasting impression.</p>
             </div>
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 text-left mx-10 mb-10 px-20 pb-20">
                 <div className="max-w-[400px]">
@@ -16,7 +16,7 @@ const WhyUs = () => {
                     </p>
                     <button className="rounded-full py-5 px-9 cursor-pointer text-base text-white font-semibold bg-gradient-to-br from-[#00b09b] to-[#96c93d] hover:bg-gradient-to-tl">About FusionFiest</button>
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-3 col-span-2">
+                <div className="grid grid-cols-1 lg:grid-cols-3 col-span-2">
                     <div className="text-center h-[213px] bg-white hover:bg-gradient-to-br from-[#00b09b] to-[#96c93d] border-r border-solid border-b border-[#f0f0f0]">
                         <div className="px-7 py-8">
                             <div className="w-12 h-12 mb-7 mx-auto">

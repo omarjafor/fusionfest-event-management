@@ -6,14 +6,13 @@ import Root from './Root/Root';
 import Home from './Pages/Home/Home';
 import ErrorPage from './Pages/ErrorPage';
 import AuthProvider from './Provider/AuthProvider';
-import Services from './Pages/Services/Services';
-import Contact from './Pages/Contact/Contact';
-import About from './Pages/About/About';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Profile from './Pages/Profile/Profile';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import { HelmetProvider } from 'react-helmet-async';
+import UpcomingEvents from './Pages/UpcomingEvents/UpcomingEvents';
+import ServiceDetails from './Pages/Services/ServiceDetails';
 
 
 const router = createBrowserRouter([
@@ -27,16 +26,12 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: '/services',
-        element: <Services></Services>
+        path: '/services/:id',
+        element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
       },
       {
-        path: '/contact',
-        element: <Contact></Contact>
-      },
-      {
-        path: '/about',
-        element: <About></About>
+        path: '/upcomingevents',
+        element: <PrivateRoute><UpcomingEvents></UpcomingEvents></PrivateRoute>
       },
       {
         path: '/profile',
