@@ -12,7 +12,7 @@ import Profile from './Pages/Profile/Profile';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import { HelmetProvider } from 'react-helmet-async';
 import UpcomingEvents from './Pages/UpcomingEvents/UpcomingEvents';
-import ServiceDetails from './Pages/Services/ServiceDetails';
+import FindService from './Pages/Services/FindService';
 
 
 const router = createBrowserRouter([
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/services/:id',
-        element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
+        element: <PrivateRoute><FindService></FindService></PrivateRoute>
       },
       {
         path: '/upcomingevents',

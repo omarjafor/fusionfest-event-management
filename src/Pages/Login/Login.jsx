@@ -72,7 +72,7 @@ const Login = () => {
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-center gap-10 my-10 items-center">
             <Helmet>
-                <title>Event | Login</title>
+                <title>FusionFest | Login</title>
             </Helmet>
             <LoginLogo></LoginLogo>
             <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -130,15 +130,15 @@ const Login = () => {
                                 Sign up
                             </Link> <span> &nbsp; OR </span>
                         </p>
-                        <button
-                            className="block w-full select-none rounded-lg bg-gradient-to-tr from-green-600 to-yellow-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                            onClick={handleGoogleSignIn}
-                            data-ripple-light="true"
-                        >
-                            Sign In with Google
-                        </button>
                     </div>
                 </form>
+                <button
+                    className="block w-11/12 mx-auto select-none relative -mt-6 mb-4 place-items-center overflow-hidden rounded-lg bg-gradient-to-tr from-green-600 to-yellow-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    onClick={handleGoogleSignIn}
+                    data-ripple-light="true"
+                >
+                    Sign In with Google
+                </button>
             </div>
         </div>
     );

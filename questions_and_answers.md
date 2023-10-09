@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: C: `"12"`
 
-<i>Explanation: The answer is "12" because 1 is number and 2 is string so this two number cannot be perform addition, so resulting in a concatenated string "12".</i>
+<i>Explanation: The answer is "12" because 1 is number and 2 is string so this 1 number and 2 string cannot be perform addition, so resulting in a concatenated string "12" where 2 showing beside the number 1 like a string.</i>
 
 </p>
 </details>
@@ -96,7 +96,7 @@ console.log(sayHi());
 
 #### Answer: B: `Hi there, undefined`
 
-<i>Explanation: The sayHi function expects an argument name, but it's called without one. This will result without it, such as "undefined" as there's no default value specified.</i>
+<i>Explanation: The sayHi function expects an argument name, where you can put any string like 'anyname', but it's called without one. This will result without it, such as "undefined" as there's no default value specified. So result showing with undefined.</i>
 
 </p>
 </details>

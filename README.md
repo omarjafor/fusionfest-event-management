@@ -1,6 +1,6 @@
 # Community and Cultural Events Management Application
 
-## [ Live Link]()
+## [ Live Link](https://event-management-auth-6857d.web.app/)
 
 ### &rarr; FusionFest Event Management Project Features ?
 

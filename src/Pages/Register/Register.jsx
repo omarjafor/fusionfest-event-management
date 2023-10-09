@@ -69,7 +69,7 @@ const Register = () => {
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-center gap-10 my-14 items-center">
             <Helmet>
-                <title>Event | Register</title>
+                <title>FusionFest | Register</title>
             </Helmet>
             <RegLogo></RegLogo>
             <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">

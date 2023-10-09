@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Helmet } from "react-helmet-async";
 import Service from './Service';
 
 
@@ -15,12 +14,8 @@ const Services = () => {
 
     }, []);
 
-    console.log(services);
     return (
         <div>
-            <Helmet>
-                <title>Event | Services</title>
-            </Helmet>
             <div className='mx-auto'>
                 <div className='mt-10 py-10'>
                     <h1 className='text-4xl font-bold'>Our Services</h1>

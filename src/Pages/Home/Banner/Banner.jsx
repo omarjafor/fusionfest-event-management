@@ -27,7 +27,6 @@ export default function Banner() {
                     modifier: 1,
                     slideShadows: true,
                 }}
-                loop:true
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
             >

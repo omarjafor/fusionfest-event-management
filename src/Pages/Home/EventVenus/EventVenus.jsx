@@ -7,7 +7,15 @@ import { useEffect } from 'react';
 const EventVenus = () => {
 
     useEffect( () => {
-        AOS.init();
+
+        AOS.refresh();
+        
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+        });
+
+        
     } ,[])
 
     return (

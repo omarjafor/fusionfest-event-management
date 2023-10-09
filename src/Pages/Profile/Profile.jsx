@@ -9,7 +9,7 @@ const Profile = () => {
     return (
         <div className="flex justify-center items-center h-[80vh]">
             <Helmet>
-                <title>Event | Profile</title>
+                <title>FusionFest | Profile</title>
             </Helmet>
             <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
