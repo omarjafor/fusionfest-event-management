@@ -1,10 +1,9 @@
-
+import Pricing from "./Pricing";
 
 
 const ServiceDetails = ({ service }) => {
 
     const { price, date, time, location, title, short_details, image } = service || {};
-    
 
     return (
         <div>
@@ -60,6 +59,9 @@ const ServiceDetails = ({ service }) => {
                         We also host fundraisers and charity galas that let you make a positive impact while enjoying elegant evenings of fine dining and entertainment. Your presence contributes.
                     </p>
                 </div>
+            </div>
+            <div>
+                <Pricing price={price}></Pricing>
             </div>
         </div>
     );

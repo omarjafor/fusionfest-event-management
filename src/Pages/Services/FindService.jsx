@@ -12,7 +12,7 @@ const FindService = () => {
 
     useEffect(() => {
 
-        fetch('/public/services.json')
+        fetch('../services.json')
             .then(res => res.json())
             .then(data => setData(data));
 
