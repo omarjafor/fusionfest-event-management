@@ -34,10 +34,10 @@ export default function Banner() {
                     <img src="https://i.ibb.co/dL3MFZ1/resizer-9.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/SPLqW8f/resizer-8.jpg" />
+                    <img src="https://i.ibb.co/1rc0MbP/resizer-2.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/1rc0MbP/resizer-2.jpg" />
+                    <img src="https://i.ibb.co/3YF99LJ/foodfair.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="https://i.ibb.co/swTRLH0/resizer-7.jpg" />
@@ -49,7 +49,7 @@ export default function Banner() {
                     <img src="https://i.ibb.co/djwW14H/resizer-3.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://i.ibb.co/sb3LMmw/resizer-6.jpg" />
+                    <img src="https://i.ibb.co/9YHd4xW/diwali.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="https://i.ibb.co/vVhBmGm/resizer-4.jpg" />
