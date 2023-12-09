@@ -3,7 +3,7 @@
 ## [ Live Link](https://event-management-auth-6857d.web.app/)
 
 ### Technology Used: 
-#### React.js, React Router, Firebase, Tailwind, Aos, React Helmet.
+#### React.js, React Router, Firebase, Tailwind, Aos, React Helmet, React toast, Swiper.
 
 ### &rarr; FusionFest Event Management Project Features ?
 
